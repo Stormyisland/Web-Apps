@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<body >
+ <style>html,
+body {
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.intro {
+  top: 0;
+  background:#fff;
+  min-height: 55vh;
+  padding-top: 45vh;
+  /*   line-height: 100vh; */
+  /*   width:100%;
+  height:96vh;
+border:solid; */
+}
+
+.intro p {
+  color:#004b66 ;
+}
+
+nav ul {
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  background-color:#b3ecff;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 55px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+nav ul li a {
+  color:#00bfff ;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #004d66;
+}
+
+.work {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+.work .work-header {
+  margin-top: 50px;
+  color: #008080;
+  font-weight: normal;
+}
+
+.project {
+  text-decoration: none;
+  color:#33ccff ;
+  display: inline-block;
+  overflow: hidden;
+ 
+  height: 220px;
+  width: 280px;
+  margin: 40px 100px;
+  border-radius:10px;
+  /*   background: url("https://res.cloudinary.com/dck40m3wf/image/upload/v1455459914/Portfolio/fancy-floral-pattern-384.jpg") repeat; */
+}
+
+.project-pic {
+  width: 100%;
+  height: 180px;
+  border-bottom: 6px ;
+ 
+  border-radius:20px
+}
+
+.project-title {
+  font-weight: bold;
+  border-radius:20px
+}
+
+.show-all {
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin: 20px auto 90px;
+   background: #e0ebe8;
+  color: #008080;
+  font-weight: bold;
+  font-size: 1em;
+  border: 4px solid #90C695;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-top:10px;
+}
+
+
+.show-all:hover {
+  background:#ff66ff ;
+  color:#99e4ff ;
+}
+
+@media only screen and (max-width: 500px) {
+  nav ul {
+    text-align: center;
+  }
+  nav ul li {
+    margin: 20px;
+  }
+  .project {
+    margin: 40px 0;
+  }
+}
+
+.contact {
+  /*   height:800px; */
+  /*   min-height:800px; */
+  background: #99e6ff;
+  padding-bottom: 160px;
+}
+
+.header {
+  padding: 160px 0 110px;
+}
+
+.contact-details {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 35px 45px 35px;
+  list-style-type: none;
+  border: 4px solid #90C695;
+  border-radius: 10%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background:#ffcccc ;
+  color: #008080;
+  text-decoration: none;
+}
+
+.contact-details:hover {
+  background: #E4F1FE;
+  color:#00bfff ;
+}
+
+footer {
+  padding: 20px;
+  background:#004b66;
+  color:#002633 ;
+  line-height: 40px;
+}
+
+footer a {
+  color:#00131a ;
+}
+
+@media only screen and (max-width: 367px) {
+  /*    #contact{
+    min-height:1100px;
+  } */
+  .contact-details {
+    border: 2px solid #90C695;
+    border-radius: 0;
+    width: 90px;
+    height: 20px;
+    padding: 10px;
+    line-height: normal;
+  }
+}
+ </style>
+ 
+<nav>
+  <ul id='navbar'>
+    <li><a href="#welcome-section">About</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div id="welcome-section" class="intro">
+
+  <h1>Hello I'm Jacques.</h1>
+  <p>a graphic designer turned web developer</p>
+
+
+</div>
+<div id="projects" class="work">
+  <h2 class="work-header">These are some freecode camp projects.</h2>
+   </a>
+    <a href="https://www.nfgctarot.com/" target="_blank" class="project project-tile">
+    <img class="project-pic" src="http://i63.tinypic.com/23iyzhx.png" alt="project">
+    <div class="project-title">Nfgc Tarot Page</div>
+  </a>
+   <a href="https://stormyisland3d.wixsite.com/3d-printing" target="_blank" class="project project-tile">
+    <img class="project-pic" src="http://i64.tinypic.com/33csm89.png" alt="project">
+    <div class="project-title">Web Page</div>
+  </a>
+  
+  <a href="https://codepen.io/sherry-and-jacques/full/qQXvBa/" target="_blank" class="project project-tile">
+    <img class="project-pic" src="http://i64.tinypic.com/15xqviv.png" alt="project">
+    <div class="project-title">Tribute Page</div>
+  </a>
+  <a href="https://codepen.io/sherry-and-jacques/pen/vQezrM" target="_blank" class="project project-tile">
+    <img class="project-pic" src="http://i66.tinypic.com/2hpnntt.png" alt="project">
+    <div class="project-title">Survey Page</div>
+  </a>
+  <a href="https://codepen.io/sherry-and-jacques/pen/yQKpQm" target="_blank" class="project project-tile">
+    <img class="project-pic" src="http://i63.tinypic.com/xelw06.png" alt="project">
+    <div class="project-title">Product Landing Page</div>
+  </a>
+  <a href="https://codepen.io/sherry-and-jacques/pen/XyeoGE" target="_blank" class="project project-tile">
+    <img class="project-pic" src="http://i66.tinypic.com/dnddf8.png" alt="project">
+    <div class="project-title">Technical Documentation Page</div>
+  </a>
+  <a href="https://codepen.io/sherry-and-jacques/full/gQxmBr/" target="_blank" class="project project-tile">
+    <img class="project-pic" src="http://i63.tinypic.com/14brds4.png" alt="project">
+    <div class="project-title">Contact Page</div>
+  </a>
+  </a>
+  <a href="https://codepen.io/sherry-and-jacques/full/JeeYZE/" target="_blank" class="project project-tile">
+    <img class="project-pic" src="http://i68.tinypic.com/smsjex.png" alt="project">
+    <div class="project-title">Leaf web</div>
+  </a>
+ 
+    <a href="http://sherry-hope.wix.com/ucooleats#!__about" target="_blank" class="project project-tile">
+    <img class="project-pic" src="http://i65.tinypic.com/15chxch.png" alt="project">
+    <div class="project-title">U-cool-eats web Page</div>
+  </a>
+
+
+  <a href="https://codepen.io/dashboard?type=view&opts_itemType=pen&opts_filter=all&opts_orderBy=id&opts_orderDirection=0&opts_tag=0&tagFilter=Tribute%20page%20for%20Robert%20Noyce%20By%20Jacques%20Lavoie&displayType=grid&previewType=iframe&page=0" class="show-all" target="_blank">Show all</a>
+</div>
+<div id="contact" class="contact">
+  <div class="header">
+    <h1>Got a project idea...</h1>
+    <p>Let me know how I can help?</p>
+  </div>
+  <a href="https://www.facebook.com/UCoolEats" target="_blank" class="contact-details">Facebook</a>
+  <a id='profile-link' href="https://github.com/freecodecamp" target="_blank" class="contact-details">GitHub</a>
+ 
+  <a href="http://sherry-jacques@hotmail.com" class="contact-details">Send a mail</a>
+  <a href="tel:778-421-2267" class="contact-details">Call me</a>
+</div>
+<footer>**This is just a small part of my portfolio.. Some of the projects I've work on do not pertain to web design and were left out. For more future content..stay tuned.
+  <p>&copy; Created for <a href="https://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a></p>
+</footer>
+</body>
+</html>
