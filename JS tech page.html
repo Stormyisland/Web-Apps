@@ -1,0 +1,134 @@
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<style>
+div.main-body {
+  display: grid;
+  grid-template-columns: minmax(300px, auto) 1fr;
+  grid-template-areas: "navbar mainContent";
+  grid-gap: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav#navbar {
+  grid-area: navbar;
+  position: fixed;
+  padding-left: 59px;
+}
+
+main#main-doc {
+  grid-area: mainContent;
+  background-color: #c6d7f2;
+  padding-left: 15px;
+  border-radius: 9px;
+}
+header {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav#navbar a {
+  display: block;
+  border: 3px solid black;
+  padding: 12px;
+  margin: 10px 0;
+  color: black;
+  background-color: #4286f4;
+  border-radius: 19px;
+  text-align: center;
+  box-shadow: 3px 3px 4px #888888;
+}
+code {
+  background-color: #e1e9f7;
+  padding: 25px;
+  
+  display: block;
+}
+@media screen and (max-width: 750px) {
+  div.main-body {
+    grid-template-columns: 1fr;
+    grid-template-areas: "navbar" "mainContent";
+  }
+  nav#navbar {
+    position: inherit;
+  }
+}
+
+</style>
+<div class="main-body">
+ <center> <nav id="navbar">
+    <header>JS Documentation</header>
+    <a href="#Introduction" class="nav-link">Introduction</a>
+    <a href="#Javascript" class="nav-link">Javascript</a>
+    <a href="#Variables" class="nav-link">Variables</a>
+    <a href="#Scope" class="nav-link">Scope</a>
+    <a href="#Functions" class="nav-link">Functions</a>
+</center>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      
+        <header>Introduction</header>
+     
+      <p>JavaScript, often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm. Alongside HTML and CSS, JavaScript is one of the three
+        core technologies of the World Wide Web.</p>
+      <p>Although there are strong outward similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design; JavaScript was influenced by programming
+        languages such as Self and Scheme</p>
+    </section>
+    <section class="main-section" id="Javascript">
+     
+        <header>Javascript</header>
+      
+      <p>In 1993, the National Center for Supercomputing Applications (NCSA), a unit of the University of Illinois at Urbana-Champaign, released NCSA Mosaic, the first popular graphical Web browser, which played an important part in expanding the growth
+        of the nascent World Wide Web beyond the NeXTSTEP niche where the WorldWideWeb had formed three years earlier. In 1994, a company called Mosaic Communications was founded in Mountain View, California and employed many of the original NCSA Mosaic
+        authors to create Mosaic Netscape. However, it intentionally shared no code with NCSA Mosaic. The internal codename for the company's browser was Mozilla, which stood for "Mosaic killer", as the company's goal was to displace NCSA Mosaic as the
+        world's number one web browser. The first version of the Web browser, Mosaic Netscape 0.9, was released in late 1994. Within four months it had already taken three-quarters of the browser market and became the main web browser for the 1990s. To
+        avoid trademark ownership problems with the NCSA, the browser was subsequently renamed Netscape Navigator in the same year, and the company took the name Netscape Communications. Netscape Communications realized that the Web needed to become more
+        dynamic. Marc Andreessen, the founder of the company believed that HTML needed a "glue language" that was easy to use by Web designers and part-time programmers to assemble components such as images and plugins, where the code could be written
+        directly in the Web page markup.
+        <p>
+
+        </p>In 1995, Netscape Communications recruited Brendan Eich with the goal of embedding the Scheme programming language into its Netscape Navigator.[11] Before he could get started, Netscape Communications collaborated with Sun Microsystems to include
+        in Netscape Navigator Sun's more static programming language Java, in order to compete with Microsoft for user adoption of Web technologies and platforms.[12] Netscape Communications then decided that the scripting language they wanted to create
+        would complement Java and should have a similar syntax, which excluded adopting other languages such as Perl, Python, TCL, or Scheme. To defend the idea of JavaScript against competing proposals, the company needed a prototype. Eich wrote one
+        in 10 days, in May 1995.</p>
+      <code>function greetMe(yourName) { alert("Hello " + yourName); } greetMe("World");</code>
+      <ul>
+        <li>Variables</li>
+        <li>Functions</li>
+        <li>Contol Flows</li>
+        <li>Promises</li>
+        <li>The Stange Parts</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Variables">
+      
+        <header>Variables</header>
+      
+      <p>Before you use a variable in a JavaScript program, you must declare it. Variables are declared with the var keyword as follows. Storing a value in a variable is called variable initialization. You can do variable initialization at the time of variable
+        creation or at a later point in time when you need that variable.</p>
+      <p>JavaScript Global Variable. A variable that is declared outside of a function definition is called a global variable and its scope is throughout your program means its value is accessible and modifiable throughout your program.</p>
+      <code>const PI = 3.14;</code>
+
+      <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements }</code>
+    </section>
+    <section class="main-section" id="Scope">
+      
+        <header>Scope</header>
+      
+      <p>JavaScript has two scopes – global and local. Any variable declared outside of a function belongs to the global scope, and is therefore accessible from anywhere in your code. </p>
+      <p>Each function has its own scope, and any variable declared within that function is only accessible from that function and any nested functions.</p>
+      <code>if (true) { var x = 5; } console.log(x); // 5</code>
+    </section>
+    <section class="main-section" id="Functions">
+      
+        <header>Functions</header>
+      
+      <P>A declared function is "saved for later use", and will be executed later, when it is invoked (called). In JavaScript, functions are objects, and they have both properties and methods. A function can also be defined using an expression </P>
+      <P>A programming language is said to have First-class functions when functions in that language are treated like any other variable. For example, in such a language, a function can be passed as an argument to other functions, can be returned by another
+        function and can be assigned as a value to a variable.</P>
+      <code>function square(number) { return number * number; }
+  </code>
+      <code>return number * number;</code>
+    </section>
+
+  </main>
+</div>
